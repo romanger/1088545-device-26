@@ -49,11 +49,19 @@
   <section>
     <h2>Фильтр</h2>
     <form action="#" method="get" id="filter-form">
-      <h3>Стоимость</h3>
-      <!-- Slider -->
-      <span>от 0</span>
-      <span>до 5000</span>
-
+      <fildset>
+        <legend>Стоимость</legend>
+        <ul>
+          <li>
+            <label for="start-price-input">от 0</label>
+            <input type="number" min="0" max="5000" name="start-price" id="start-price-input">
+          </li>
+          <li>
+            <label for="end-price-input">до 5000</label>
+            <input type="number" min="0" max="5000" name="end-price" id="end-price-input">
+          </li>
+        </ul>
+      </fildset>
 
       <fildset>
         <legend>Цвет</legend>
@@ -110,7 +118,7 @@
     </ul>
   </section>
   <section>
-    <h2>Список товаров</h2>
+    <h2 class="visually-hidden">Список товаров</h2>
 
     <ul>
       <li>
@@ -195,7 +203,6 @@
   <a href="#">
     <img
       src="img/logo-device-yellow.svg"
-      alt="Логотип"
       width="163"
       height="35"
       alt="Логотип - Магазин гаджетов Device"

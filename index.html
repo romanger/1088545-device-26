@@ -3,27 +3,29 @@
 <head>
   <meta charset="utf-8"/>
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
   <a href="index.html">
     <img src="img/logo-device.svg" alt="Логотип - Магазин гаджетов Device" width="163" height="35"/>
   </a>
-  <form action="search-results.html" method="get" id="search-form">
+  <form action="search-results.html" method="get" id="search-form" class="search-form">
     <label for="search-input" class="visually-hidden">Поиск</label>
     <input type="text" id="search-input" name="search-term" placeholder="Поиск по сайту">
     <button type="submit">Найти</button>
   </form>
-  <ul>
-    <li><a href="#">Войти</a></li>
-    <li><a href="#">Сравнить</a></li>
-    <li><a href="#">Корзина</a></li>
+  <ul class="user-menu">
+    <li><a href="#" class="login">Войти</a></li>
+    <li><a href="#" class="compare">Сравнить</a></li>
+    <li><a href="#" class="cart">Корзина</a></li>
   </ul>
   <nav>
-    <ul>
-      <li>
+    <ul class="main-navigation">
+      <li class="sub-menu-parent">
         <a href="catalog.html">Каталог товаров</a>
-        <ul>
+        <ul class="sub-menu">
           <li><a href="catalog.html">Виртуальная реальность</a></li>
           <li><a href="catalog.html">Фитнес-браслеты</a></li>
           <li><a href="catalog.html">Квадрокоптеры</a></li>
@@ -41,9 +43,9 @@
 <main>
   <h1 class="visually-hidden">Магазин гаджетов - Device</h1>
 
-  <section>
+  <section class="top-slider">
     <h2 class="visually-hidden">Избранные продукты</h2>
-    <article>
+    <article class="slide">
       <p>01</p>
       <h3>Делай селфи, как Бен Стиллер!</h3>
       <p>
@@ -75,7 +77,7 @@
         height="486"
       />
     </article>
-    <article>
+    <article class="slide">
       <p>02</p>
       <h3>Худеем правильно!</h3>
       <p>
@@ -103,7 +105,7 @@
         height="485"
       />
     </article>
-    <article>
+    <article class="slide">
       <p>03</p>
       <h3>Порхает как бабочка, жалит как пчела!</h3>
       <p>
@@ -133,7 +135,7 @@
         height="334"
       />
     </article>
-    <ul>
+    <ul class="bullet-navigation">
       <li>
         <button type="button">1</button>
       </li>
@@ -147,8 +149,8 @@
   </section>
   <section>
     <h2 class="visually-hidden">Категории продуктов</h2>
-    <ul>
-      <li>
+    <ul class="category-list">
+      <li class="single-category-item">
         <h3><a href="catalog.html">Виртуальная реальность</a></h3>
         <a href="catalog.html">
           <img
@@ -159,7 +161,7 @@
           />
         </a>
       </li>
-      <li>
+      <li class="single-category-item">
         <h3><a href="catalog.html">Моноподы для селфи</a></h3>
         <a href="catalog.html">
           <img
@@ -169,7 +171,7 @@
             height="117"
           /></a>
       </li>
-      <li>
+      <li class="single-category-item">
         <h3><a href="catalog.html">Экшн-камеры</a></h3>
         <a href="catalog.html">
           <img
@@ -179,7 +181,7 @@
             height="87"
           /></a>
       </li>
-      <li>
+      <li class="single-category-item">
         <h3><a href="catalog.html">Фитнес-браслеты</a></h3>
         <a href="catalog.html">
           <img
@@ -190,7 +192,7 @@
           />
         </a>
       </li>
-      <li>
+      <li class="single-category-item">
         <h3><a href="catalog.html">Умные часы</a></h3>
         <a href="catalog.html">
           <img
@@ -200,7 +202,7 @@
             height="98"
           /></a>
       </li>
-      <li>
+      <li class="single-category-item">
         <h3><a href="catalog.html">Квадрокоптеры</a></h3>
         <a href="catalog.html">
           <img
@@ -216,13 +218,13 @@
   <section>
     <h2 class="visually-hidden">Сервисы</h2>
 
-    <ul>
+    <ul class="serice-tabs">
       <li><a href="#">Доставка</a></li>
       <li><a href="#">Гарантия</a></li>
       <li><a href="#">Кредит</a></li>
     </ul>
 
-    <div>
+    <div class="single-service delivery">
       <h3>Доставка</h3>
       <p>
         Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -230,14 +232,14 @@
         ваш этаж.
       </p>
     </div>
-    <div>
+    <div class="single-service warranty">
       <h3>Гарантия</h3>
       <p>
         Если из-за возгорания купленного у нас товара у вас сгорит дом — не
         переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
       </p>
     </div>
-    <div>
+    <div class="single-service credit">
       <h3>Кредит</h3>
       <p>
         Залезть в долговую яму стало проще! Кредитные консультанты подберут
@@ -248,13 +250,13 @@
   </section>
   <section>
     <h2 class="visually-hidden">Бренды</h2>
-    <ul>
-      <li>
+    <ul class="brand-gallery">
+      <li class="single-brand">
         <a href="catalog.html"
         ><img src="img/brand-1.png" alt="dji" width="260" height="100"
         /></a>
       </li>
-      <li>
+      <li class="single-brand">
         <a href="catalog.html"
         ><img
           src="img/brand-2.png"
@@ -263,12 +265,12 @@
           height="100"
         /></a>
       </li>
-      <li>
+      <li class="single-brand">
         <a href="catalog.html"
         ><img src="img/brand-3.png" alt="GoPro" width="260" height="100"
         /></a>
       </li>
-      <li>
+      <li class="single-brand">
         <a href="catalog.html"
         ><img src="img/brand-4.png" alt="Vive" width="260" height="100"
         /></a>
@@ -276,7 +278,7 @@
     </ul>
   </section>
 
-  <section>
+  <section class="about-us">
     <h2>О нас</h2>
     <p>
       Огромный выбор гаджетов не оставит равнодушным гика, который есть в
@@ -291,16 +293,16 @@
       <li>Автотрейдинг</li>
       <li>ЖелДорЭкспедиция</li>
     </ul>
-    <a href="#">Подробнее о нас</a>
+    <a href="#" class="button">Подробнее о нас</a>
   </section>
-  <section>
+  <section class="contact-us">
     <h2>Контакты</h2>
     <p>
       Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
       проверить работоспособность покупки. Всякое бывает.
     </p>
     <img src="img/map.png" width="564" height="225" alt="Адрес магазина: г. Москва, ул. Строителей, 15"/>
-    <a href="#">Напишите нам</a>
+    <a href="#" class="button">Напишите нам</a>
   </section>
 </main>
 <footer>
@@ -312,22 +314,22 @@
       alt="Логотип - Магазин гаджетов Device"
     />
   </a>
-  <ul>
-    <li><a href="#">Войти</a></li>
-    <li><a href="#">Сравнить</a></li>
-    <li><a href="#">Карзина</a></li>
+  <ul class="user-menu">
+    <li><a href="#" class="login">Войти</a></li>
+    <li><a href="#" class="compare">Сравнить</a></li>
+    <li><a href="#" class="cart">Карзина</a></li>
   </ul>
   <address>
     г. Москва, ул. Строителей, 15
   </address>
-  <ul>
+  <ul class="service-menu">
     <li><a href="#">Доставка</a></li>
     <li><a href="#">Гарантия</a></li>
     <li><a href="#">Контакты</a></li>
   </ul>
   <p>Тел.: +7 (495) 495-95-95</p>
 
-  <ul>
+  <ul class="social-links">
     <li><a href="#" aria-label="Device на Facebook">Facebook</a></li>
     <li><a href="#" aria-label="Device в Instagram">Instagram</a></li>
     <li><a href="#" aria-label="Device в Twitter">Twitter</a></li>
@@ -337,7 +339,7 @@
   ><img src="img/logo-html.svg" width="40" height="45" alt="Htmlacademy"
   /></a>
 </footer>
-<section>
+<section class="modal-contact">
   <h2 class="visually-hidden">Форма обратной связи</h2>
   <form action="https://echo.htmlacademy.ru" method="post" id="contact-us-form">
     <p>
@@ -356,7 +358,7 @@
     <button type="button">Закрыть</button>
   </form>
 </section>
-<section>
+<section class="modal-map">
   <h2 class="visually-hidden">Наш адресс на карте</h2>
   <img src="img/map-big.png" alt="Адрес магазина: г. Москва, ул. Строителей, 15">
   <button type="button">Закрыть</button>

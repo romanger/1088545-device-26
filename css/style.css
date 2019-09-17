@@ -1,0 +1,325 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/gilroyextrabold.woff2) format('woff2'), url(../fonts/gilroyextrabold.woff) format('woff');
+}
+
+
+@font-face {
+  font-family: 'Gilroy Light';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/gilroylight.woff2) format('woff2'), url(../fonts/gilroylight.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/opensans.woff2) format('woff2'), url(../fonts/opensans.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open sans Light';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/opensans.woff2) format('woff2'), url(../fonts/opensans.woff) format('woff');
+}
+
+
+
+/* Global styles */
+
+
+body {
+  font-family: 'Open sans Light', Arial, Helvetica, sans-serif;
+  color: #464646;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.15;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+p {
+  margin-bottom: 44px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Helpers */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Layout */
+
+header {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+footer {
+  background-color: #464646;
+}
+
+/* Buttons */
+
+.button {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+  color: #000000;
+  padding: 14px 43px 11px 44px;
+
+  background: rgb(240, 197, 46);
+  background: linear-gradient(180deg, rgba(240, 197, 46, 0) 43%, rgba(240, 197, 46, 1) 43%, rgba(240, 197, 46, 1) 60%, rgba(240, 197, 46, 0) 60%);
+}
+
+.button:hover {
+  background-color: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation */
+
+.user-menu,
+.main-navigation,
+.service-menu,
+.serice-tabs,
+.social-links,
+.bullet-navigation,
+.sub-menu {
+  list-style: none;
+  padding-left: 0px;
+}
+
+header a {
+  color: #000000;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+header a:hover {
+  opacity: 0.6;
+}
+
+header a:active{
+  opacity: 0.3;
+}
+
+
+.user-menu .login {
+  padding-left: 27px;
+  background-image: url(../img/user.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+
+.user-menu .compare {
+  padding-left: 20px;
+  background-image: url(../img/compare.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+
+.user-menu .cart {
+  padding-left: 24px;
+  background-image: url(../img/cart.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+footer .user-menu a {
+  color: rgba(255, 255, 255, 0.7);
+  background-image: none;
+  position: relative;
+}
+
+footer .user-menu a:hover {
+  color: rgb(255, 255, 255);
+}
+
+footer .user-menu a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+footer .user-menu a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+footer .user-menu a:hover::before {
+  opacity: 0.6;
+}
+
+footer .user-menu a:active::before {
+  opacity: 0.3;
+}
+
+footer .user-menu .login {
+  background-image: url(../img/user-yellow.svg);
+  width: 13px;
+  height: 12px;
+  margin-top: -6px;
+}
+
+footer .user-menu .compare {
+  background-image: url(../img/compare-yellow.svg);
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+}
+
+footer .user-menu .cart {
+  background-image: url(../img/cart-yellow.svg);
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+}
+
+.main-navigation a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.main-navigation .sub-menu-parent {
+  padding-right: 16px;
+  background-image: url(../img/plus.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.sub-menu a {
+  font-family: 'Open suns', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-transform: none;
+}
+
+/* Search form */
+
+.search-form input[type="text"] {
+  background-color: transparent;
+  padding-left: 20px;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  border: none;
+  height: 43px;
+  outline: none;
+}
+
+.search-form button {
+  border: 2px solid #000000;
+  background: transparent;
+  padding: 14px 21px;
+  position: relative;
+  right: 4px;
+  display: none;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-form button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-form ::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form:hover ::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-form input:focus {
+  width: 356px;
+  border-bottom: 2px solid #000000;
+}
+
+.search-form input:focus+button {
+  display: inline-block;
+}
+
+
+/* About us , Contact us */
+
+.about-us h2,
+.contact-us h2 {
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.21px;
+}
+
+
+.about-us h2::before,
+.contact-us h2::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  margin-bottom: 51px;
+  background-color: #000000;
+}
+
+.about-us ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.about-us li {
+  padding-left: 36px;
+  background-image: url(../img/list-bullet.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+}

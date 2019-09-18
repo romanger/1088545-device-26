@@ -120,7 +120,8 @@ footer {
 .serice-tabs,
 .social-links,
 .bullet-navigation,
-.sub-menu {
+.sub-menu,
+.footer-user-menu {
   list-style: none;
   padding-left: 0px;
 }

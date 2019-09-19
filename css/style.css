@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 
 @font-face {
-  font-family: 'Gilroy Light';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -16,7 +16,7 @@
 }
 
 @font-face {
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -24,7 +24,7 @@
 }
 
 @font-face {
-  font-family: 'Open sans Light';
+  font-family: "Open sans";
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -36,7 +36,7 @@
 
 
 body {
-  font-family: 'Open sans Light', Arial, Helvetica, sans-serif;
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
   color: #464646;
   font-weight: 300;
   font-size: 15px;
@@ -175,7 +175,8 @@ footer a:active,
   opacity: 0.3;
 }
 
-.user-menu li, .footer-user-menu li {
+.user-menu li,
+.footer-user-menu li {
   background-repeat: no-repeat;
   background-position: left center;
 }
@@ -233,7 +234,7 @@ footer a:active,
 }
 
 .sub-menu a {
-  font-family: 'Open suns', Arial, Helvetica, sans-serif;
+  font-family: "Open suns", Arial, Helvetica, sans-serif;
   font-size: 15px;
   text-transform: none;
   letter-spacing: 0.15px;
@@ -345,7 +346,7 @@ footer a:active,
   border-bottom: 2px solid #000000;
 }
 
-.search-form input:focus + button {
+.search-form input:focus+button {
   display: inline-block;
 }
 
@@ -374,7 +375,8 @@ footer a:active,
 }
 
 .featured-products-slider tr:first-child td {
-  font-family: "Gilroy Light", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 36px;
   line-height: 48px;
   color: #000000;
@@ -442,7 +444,8 @@ footer a:active,
   text-align: center;
 }
 
-.service-tabs .button.active, .service-tabs .button:active {
+.service-tabs .button.active,
+.service-tabs .button:active {
   width: 278px;
   background-color: #000000;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -496,7 +499,8 @@ footer a:active,
 
 /* Footer elements */
 
-address, .phone {
+address,
+.phone {
   color: #ffffff;
   margin: 0;
   font-style: normal;
@@ -517,8 +521,9 @@ address, .phone {
   color: #464646;
   opacity: 0.4;
   font-size: 14px;
-  font-family: 'Open sans Light', Arial, Helvetica, sans-serif;
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
   line-height: 18px;
+  font-weight: 300;
 }
 
 .contact-us-form input[type="text"],
@@ -580,18 +585,20 @@ address, .phone {
 
 .filter label {
   font-size: 14px;
-  font-family: 'Open sans Light', Arial, Helvetica, sans-serif;
+  font-family: "Open sans", Arial, Helvetica, sans-serif;
   line-height: 40px;
   letter-spacing: 0.14px;
+  font-weight: 300;
 }
 
-.filter :disabled + label {
+.filter :disabled+label {
   color: #a6a6a6;
 }
 
 .range label {
-  font-family: "Gilroy Light", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   opacity: 0.2;
+  font-weight: 300;
 }
 
 
@@ -655,9 +662,10 @@ address, .phone {
 
 .product-card p {
   font-size: 16px;
-  font-family: "Gilroy Light", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   line-height: 24px;
   letter-spacing: 0.16px;
+  font-weight: 300;
 }
 
 .product-button-group {
@@ -688,10 +696,11 @@ address, .phone {
   background-color: #ebebeb;
 }
 
-.pagination li.back,
-.pagination li.forward {
+.pagination .back,
+.pagination .forward {
+  display: inline-block;
   height: 70px;
-  padding: 20px 30px 20px 30px;
+  padding: 24px 30px 20px 30px;
 }
 
 .pagination a {
@@ -702,30 +711,32 @@ address, .phone {
   text-transform: uppercase;
   letter-spacing: 0.91px;
   opacity: 0.3;
+  font-weight: 400;
 }
 
 .pagination a:hover {
   opacity: 0.6;
 }
 
-.pagination li.back a,
-.pagination li.forward a,
+.pagination .back,
+.pagination .forward,
 .pagination a:active,
 .pagination a.active {
   opacity: 1;
 }
 
-.pagination li.back:hover,
-.pagination li.forward:hover {
+.pagination .back:hover,
+.pagination .forward:hover {
+  background-color: #d8d8d8;
+  opacity: 1;
+}
+
+.pagination .back:active,
+.pagination .forward:active {
   background-color: #d8d8d8;
 }
 
-.pagination li.back:active,
-.pagination li.forward:active {
-  background-color: #d8d8d8;
-}
-
-.pagination li.back:active a,
-.pagination li.forward:active a {
+.pagination .back:active,
+.pagination .forward:active {
   opacity: 0.3;
 }

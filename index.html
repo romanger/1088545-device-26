@@ -17,9 +17,9 @@
     <button type="submit">Найти</button>
   </form>
   <ul class="user-menu">
-    <li><a href="#" class="login">Войти</a></li>
-    <li><a href="#" class="compare">Сравнить</a></li>
-    <li><a href="#" class="cart">Корзина</a></li>
+    <li class="login"><a href="#">Войти</a></li>
+    <li class="compare"><a href="#">Сравнить</a></li>
+    <li class="cart"><a href="#">Корзина</a></li>
   </ul>
   <nav>
     <ul class="main-navigation">
@@ -315,9 +315,9 @@
     />
   </a>
   <ul class="footer-user-menu">
-    <li><a href="#" class="login">Войти</a></li>
-    <li><a href="#" class="compare">Сравнить</a></li>
-    <li><a href="#" class="cart">Карзина</a></li>
+    <li class="login"><a href="#">Войти</a></li>
+    <li class="compare"><a href="#">Сравнить</a></li>
+    <li class="cart"><a href="#">Карзина</a></li>
   </ul>
   <address>
     г. Москва, ул. Строителей, 15
@@ -327,12 +327,12 @@
     <li><a href="#">Гарантия</a></li>
     <li><a href="#">Контакты</a></li>
   </ul>
-  <p>Тел.: +7 (495) 495-95-95</p>
+  <p class="phone">Тел.: +7 (495) 495-95-95</p>
 
   <ul class="social-links">
-    <li><a href="#" aria-label="Device на Facebook">Facebook</a></li>
-    <li><a href="#" aria-label="Device в Instagram">Instagram</a></li>
-    <li><a href="#" aria-label="Device в Twitter">Twitter</a></li>
+    <li><a href="#" class="facebook" aria-label="Device на Facebook">Facebook</a></li>
+    <li><a href="#" class="instagram" aria-label="Device в Instagram">Instagram</a></li>
+    <li><a href="#" class="twitter" aria-label="Device в Twitter">Twitter</a></li>
   </ul>
 
   <a href="https://htmlacademy.ru/intensive/htmlcss"
@@ -341,27 +341,27 @@
 </footer>
 <section class="modal-contact">
   <h2 class="visually-hidden">Форма обратной связи</h2>
-  <form action="https://echo.htmlacademy.ru" method="post" id="contact-us-form">
+  <form action="https://echo.htmlacademy.ru" method="post" id="contact-us-form" class="contact-us-form">
     <p>
       <label for="name-field">Ваше имя</label>
       <input type="text" id="name-field" placeholder="Имя Фамилия">
     </p>
     <p>
       <label for="email-field">Ваш e-mail:</label>
-      <input type="text" id="email-field" placeholder="email@example.com">
+      <input type="email" id="email-field" placeholder="email@example.com">
     </p>
     <p>
       <label for="text-field">Текст письма:</label>
-      <textarea name="letter-text" id="text-field" cols="30" rows="10">В свободной форме</textarea>
+      <textarea name="letter-text" id="text-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
     </p>
-    <button type="submit">Отправить</button>
-    <button type="button">Закрыть</button>
+    <button type="submit" class="button">Отправить</button>
+    <button type="button" class="close">Закрыть</button>
   </form>
 </section>
 <section class="modal-map">
   <h2 class="visually-hidden">Наш адресс на карте</h2>
   <img src="img/map-big.png" alt="Адрес магазина: г. Москва, ул. Строителей, 15">
-  <button type="button">Закрыть</button>
+  <button type="button" class="close">Закрыть</button>
 </section>
 </body>
 </html>

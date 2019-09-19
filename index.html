@@ -43,19 +43,19 @@
 <main>
   <h1 class="visually-hidden">Магазин гаджетов - Device</h1>
 
-  <section class="top-slider">
+  <section class="featured-products-slider">
     <h2 class="visually-hidden">Избранные продукты</h2>
     <article class="slide">
-      <p>01</p>
+      <p class="slide-number">01</p>
       <h3>Делай селфи, как Бен Стиллер!</h3>
       <p>
         Самая длинная палка для селфи доступна в нашем магазине. Восемь
         (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
       </p>
-      <a href="#">Подробнее</a>
+      <a href="#" class="button">Подробнее</a>
 
       <table>
-        <caption>
+        <caption class="visually-hidden">
           Параметры
         </caption>
         <tr>
@@ -78,16 +78,16 @@
       />
     </article>
     <article class="slide">
-      <p>02</p>
+      <p class="slide-number">02</p>
       <h3>Худеем правильно!</h3>
       <p>
         Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
         занятия и соблюдать диету.
       </p>
-      <a href="#">Подробнее</a>
+      <a href="#" class="button">Подробнее</a>
 
       <table>
-        <caption>
+        <caption class="visually-hidden">
           Параметры
         </caption>
         <tr>
@@ -106,15 +106,15 @@
       />
     </article>
     <article class="slide">
-      <p>03</p>
+      <p class="slide-number">03</p>
       <h3>Порхает как бабочка, жалит как пчела!</h3>
       <p>
         Порхает как бабочка, жалит как пчела!
       </p>
-      <a href="#">Подробнее</a>
+      <a href="#" class="button">Подробнее</a>
 
       <table>
-        <caption>
+        <caption class="visually-hidden">
           Параметры
         </caption>
         <tr>
@@ -137,7 +137,7 @@
     </article>
     <ul class="bullet-navigation">
       <li>
-        <button type="button">1</button>
+        <button class="active" type="button">1</button>
       </li>
       <li>
         <button type="button">2</button>
@@ -149,10 +149,10 @@
   </section>
   <section>
     <h2 class="visually-hidden">Категории продуктов</h2>
-    <ul class="category-list">
+    <ul class="category-list list-clear">
       <li class="single-category-item">
         <h3><a href="catalog.html">Виртуальная реальность</a></h3>
-        <a href="catalog.html">
+        <a href="catalog.html" class="category-icon">
           <img
             src="img/popular-1.svg"
             alt="Виртуальная реальность"
@@ -163,7 +163,7 @@
       </li>
       <li class="single-category-item">
         <h3><a href="catalog.html">Моноподы для селфи</a></h3>
-        <a href="catalog.html">
+        <a href="catalog.html" class="category-icon">
           <img
             src="img/popular-2.svg"
             alt="Моноподы для селфи"
@@ -173,7 +173,7 @@
       </li>
       <li class="single-category-item">
         <h3><a href="catalog.html">Экшн-камеры</a></h3>
-        <a href="catalog.html">
+        <a href="catalog.html" class="category-icon">
           <img
             src="img/popular-3.svg"
             alt="Экшн-камеры"
@@ -183,7 +183,7 @@
       </li>
       <li class="single-category-item">
         <h3><a href="catalog.html">Фитнес-браслеты</a></h3>
-        <a href="catalog.html">
+        <a href="catalog.html" class="category-icon">
           <img
             src="img/popular-4.svg"
             alt="Фитнес-браслеты"
@@ -194,7 +194,7 @@
       </li>
       <li class="single-category-item">
         <h3><a href="catalog.html">Умные часы</a></h3>
-        <a href="catalog.html">
+        <a href="catalog.html" class="category-icon">
           <img
             src="img/popular-5.svg"
             alt="Умные часы"
@@ -204,7 +204,7 @@
       </li>
       <li class="single-category-item">
         <h3><a href="catalog.html">Квадрокоптеры</a></h3>
-        <a href="catalog.html">
+        <a href="catalog.html" class="category-icon">
           <img
             src="img/popular-6.svg"
             alt="Квадрокоптеры"
@@ -215,13 +215,13 @@
     </ul>
   </section>
 
-  <section>
+  <section class="services">
     <h2 class="visually-hidden">Сервисы</h2>
 
-    <ul class="serice-tabs">
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Гарантия</a></li>
-      <li><a href="#">Кредит</a></li>
+    <ul class="service-tabs">
+      <li><a href="#" class="button active">Доставка</a></li>
+      <li><a href="#" class="button">Гарантия</a></li>
+      <li><a href="#" class="button">Кредит</a></li>
     </ul>
 
     <div class="single-service delivery">
@@ -250,7 +250,7 @@
   </section>
   <section>
     <h2 class="visually-hidden">Бренды</h2>
-    <ul class="brand-gallery">
+    <ul class="brand-gallery list-clear">
       <li class="single-brand">
         <a href="catalog.html"
         ><img src="img/brand-1.png" alt="dji" width="260" height="100"

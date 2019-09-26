@@ -93,8 +93,8 @@ header {
   background-color: rgba(240, 197, 46, 0.5);
   display: flex;
   flex-direction: column;
-  padding-right: 61px;
-  padding-left: 61px;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 footer {
@@ -107,6 +107,10 @@ footer {
   margin-left: auto;
 }
 
+header .logo {
+  margin-top:-19px;
+}
+
 .user-menu-wrap,
 .about-us-wrap,
 .service-menu-wrap,
@@ -115,7 +119,9 @@ footer {
   justify-content: space-between;
 }
 
-.catalog-main-wrap {
+.user-navigation,
+.main-navigation,
+.catalog-main-wrap{
   display: flex;
 }
 
@@ -215,12 +221,6 @@ footer a:active,
   opacity: 0.3;
 }
 
-.user-navigation li,
-.footer-user-menu li {
-  background-repeat: no-repeat;
-  background-position: left center;
-}
-
 .user-navigation .logout {
   opacity: 0.3;
 }
@@ -232,6 +232,10 @@ footer a:active,
   font-weight: 400;
   color: #000000;
   letter-spacing: 3.6px;
+}
+
+.sub-menu {
+  display: none;
 }
 
 .sub-menu a {
@@ -353,7 +357,7 @@ footer a:active,
 }
 
 
-/* Home top slaider */
+/* Home top slider */
 
 .featured-products-slider .slide {
   background: rgb(240, 197, 46);

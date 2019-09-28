@@ -55,7 +55,7 @@
         <article class="slide">
           <div class="slide-content">
             <p class="slide-number">01</p>
-            <h3>Делай селфи, как Бен Стиллер!</h3>
+            <h3>Делай селфи,<br>как Бен Стиллер!</h3>
             <p>
               Самая длинная палка для селфи доступна в нашем магазине. Восемь
               (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -66,6 +66,9 @@
               <caption class="visually-hidden">
                 Параметры
               </caption>
+              <col width="100">
+              <col width="90">
+              <col width="90">
               <tr>
                 <td>8,5 м</td>
                 <td>5 кг</td>
@@ -180,7 +183,7 @@
           </a>
         </li>
         <li class="single-category-item">
-          <h3><a href="catalog.html">Моноподы для селфи</a></h3>
+          <h3><a href="catalog.html">Моноподы <br>для селфи</a></h3>
           <a href="catalog.html" class="category-icon">
             <img
               src="img/popular-2.svg"
@@ -236,13 +239,15 @@
   <section class="services">
     <div class="container">
       <h2 class="visually-hidden">Сервисы</h2>
-
+      <div class="services-wrap">
+      <div class="servises-navigation">
       <ul class="service-tabs">
         <li><a href="#" class="button active">Доставка</a></li>
         <li><a href="#" class="button">Гарантия</a></li>
         <li><a href="#" class="button">Кредит</a></li>
       </ul>
-
+    </div>
+    <div class="services-content">
       <div class="single-service delivery">
         <h3>Доставка</h3>
         <p>
@@ -266,6 +271,8 @@
           банка, разумеется.
         </p>
       </div>
+    </div>
+    </div>
     </div>
   </section>
   <div class="container">
@@ -364,7 +371,7 @@
       </ul>
 
       <a href="https://htmlacademy.ru/intensive/htmlcss"
-      ><img src="img/logo-html.svg" width="40" height="45" alt="Htmlacademy"
+      ><img src="img/logo-html.svg" width="27" height="35" alt="Htmlacademy"
       /></a>
     </div>
   </div>
@@ -372,6 +379,7 @@
 <section class="modal-contact">
   <h2 class="visually-hidden">Форма обратной связи</h2>
   <form action="https://echo.htmlacademy.ru" method="post" id="contact-us-form" class="contact-us-form">
+    <div class="inputs-wrap">
     <p>
       <label for="name-field">Ваше имя</label>
       <input type="text" id="name-field" placeholder="Имя Фамилия">
@@ -380,6 +388,7 @@
       <label for="email-field">Ваш e-mail:</label>
       <input type="email" id="email-field" placeholder="email@example.com">
     </p>
+  </div>
     <p>
       <label for="text-field">Текст письма:</label>
       <textarea name="letter-text" id="text-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>

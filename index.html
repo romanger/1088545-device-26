@@ -15,7 +15,7 @@
     <div class="user-menu-wrap">
       <form action="search-results.html" method="get" id="search-form" class="search-form">
         <label for="search-input" class="visually-hidden">Поиск</label>
-        <input type="text" id="search-input" name="search-term" placeholder="Поиск по сайту">
+        <input type="text" id="search-input" name="search-term" placeholder="Поиск по сайту" required>
         <button type="submit">Найти</button>
       </form>
       <ul class="user-navigation">
@@ -52,121 +52,122 @@
     <section class="featured-products-slider">
       <h2 class="visually-hidden">Избранные продукты</h2>
       <div class="slider">
-        <article class="slide">
-          <div class="slide-content">
-            <p class="slide-number">01</p>
-            <h3>Делай селфи,<br>как Бен Стиллер!</h3>
-            <p>
-              Самая длинная палка для селфи доступна в нашем магазине. Восемь
-              (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-            </p>
-            <a href="#" class="button">Подробнее</a>
-
-            <table>
-              <caption class="visually-hidden">
-                Параметры
-              </caption>
-              <col width="100">
-              <col width="90">
-              <col width="90">
-              <tr>
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-              <tr>
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
-              </tr>
-            </table>
-          </div>
-          <div class="slide-image">
-            <img
-              src="img/slider-1.png"
-              alt="Делай селфи, как Бен Стиллер!"
-              width="384"
-              height="486"
-            />
-          </div>
-        </article>
-        <article class="slide">
-          <div class="slide-content">
-            <p class="slide-number">02</p>
-            <h3>Худеем правильно!</h3>
-            <p>
-              Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
-              занятия и соблюдать диету.
-            </p>
-            <a href="#" class="button">Подробнее</a>
-
-            <table>
-              <caption class="visually-hidden">
-                Параметры
-              </caption>
-              <tr>
-                <td>48 часов</td>
-              </tr>
-              <tr>
-                <td>Без подзарядки</td>
-              </tr>
-            </table>
-          </div>
-          <
-          <div class="slide-image">
-            <img
-              src="img/slider-2.png"
-              alt="Худеем правильно!"
-              width="345"
-              height="485"
-            />
-          </div>
-        </article>
-        <article class="slide">
-          <div class="slide-content">
-            <p class="slide-number">03</p>
-            <h3>Порхает как бабочка, жалит как пчела!</h3>
-            <p>
-              Порхает как бабочка, жалит как пчела!
-            </p>
-            <a href="#" class="button">Подробнее</a>
-
-            <table>
-              <caption class="visually-hidden">
-                Параметры
-              </caption>
-              <tr>
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-              <tr>
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
-              </tr>
-            </table>
-          </div>
-          <div class="slide-image">
-            <img
-              src="img/slider-3.png"
-              alt="Порхает как бабочка,
-            жалит как пчела!"
-              width="536"
-              height="334"
-            />
-          </div>
-        </article>
+          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list list-clear">
+            <li class="slider-item">
+                <div class="slide-content">
+                    <p class="slide-number">01</p>
+                    <h3>Делай селфи,<br>как Бен Стиллер!</h3>
+                    <p>
+                      Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                      (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                    </p>
+                    <a href="#" class="button">Подробнее</a>
+        
+                    <table>
+                      <caption class="visually-hidden">
+                        Параметры
+                      </caption>
+                      <col width="150">
+                      <col width="140">
+                      <col width="150">
+                      <tr>
+                        <td>8,5 м</td>
+                        <td>5 кг</td>
+                        <td>Карбон</td>
+                      </tr>
+                      <tr>
+                        <td>Длина палки</td>
+                        <td>Вес палки</td>
+                        <td>Материал</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="slide-image">
+                    <img
+                      src="img/slider-1.png"
+                      alt="Делай селфи, как Бен Стиллер!"
+                      width="384"
+                      height="486"
+                    />
+                  </div>
+            </li>
+            <li class="slider-item">
+                <div class="slide-content">
+                    <p class="slide-number">02</p>
+                    <h3>Худеем <br>правильно!</h3>
+                    <p>
+                      Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+                      занятия и соблюдать диету.
+                    </p>
+                    <a href="#" class="button">Подробнее</a>
+        
+                    <table>
+                      <caption class="visually-hidden">
+                        Параметры
+                      </caption>
+                      <tr>
+                        <td>48 часов</td>
+                      </tr>
+                      <tr>
+                        <td>Без подзарядки</td>
+                      </tr>
+                    </table>
+                  </div>
+                  
+                  <div class="slide-image">
+                    <img
+                      src="img/slider-2.png"
+                      alt="Худеем правильно!"
+                      width="345"
+                      height="485"
+                    />
+                  </div>
+            </li>
+            <li class="slider-item">
+                <div class="slide-content">
+                    <p class="slide-number">03</p>
+                    <h3>Порхает как бабочка, жалит как пчела!</h3>
+                    <p>
+                      Порхает как бабочка, жалит как пчела!
+                    </p>
+                    <a href="#" class="button">Подробнее</a>
+        
+                    <table>
+                        <col width="150">
+                        <col width="140">
+                      <caption class="visually-hidden">
+                        Параметры
+                      </caption>
+                      <tr>
+                        <td>800 м</td>
+                        <td>50 м</td>
+                      </tr>
+                      <tr>
+                        <td>Дальность полета</td>
+                        <td>Радиус поражения</td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="slide-image">
+                    <img
+                      src="img/slider-3.png"
+                      alt="Порхает как бабочка,
+                    жалит как пчела!"
+                      width="536"
+                      height="334"
+                    />
+                  </div>
+            </li>
+        </ul>      
       </div>
-      <ul class="bullet-navigation">
-        <li>
-          <button class="active" type="button">1</button>
-        </li>
-        <li>
-          <button type="button">2</button>
-        </li>
-        <li>
-          <button type="button">3</button>
-        </li>
-      </ul>
     </section>
     <section>
       <h2 class="visually-hidden">Категории продуктов</h2>

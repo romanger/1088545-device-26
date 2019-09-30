@@ -30,6 +30,7 @@
               id="search-input"
               name="search-term"
               placeholder="Поиск по сайту"
+              required
             />
             <button type="submit">Найти</button>
           </form>
@@ -76,33 +77,28 @@
             <form action="#" method="get" id="filter-form">
               <fildset>
                 <legend>Стоимость</legend>
-                <ul class="range">
-                  <li>
-                    <label for="start-price-input">от 0</label>
-                    <input
-                      type="number"
-                      min="0"
-                      max="5000"
-                      name="start-price"
-                      id="start-price-input"
-                    />
-                  </li>
-                  <li>
-                    <label for="end-price-input">до 5000</label>
-                    <input
-                      type="number"
-                      min="0"
-                      max="5000"
-                      name="end-price"
-                      id="end-price-input"
-                    />
-                  </li>
-                </ul>
+                <div class="filter-range">
+                    <div class="range-controls">
+                        <div class="scale">
+                          <div class="bar"></div>
+                        </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
+                      </div>
+                  <div class="price-controls">
+                    <label class="min-price"
+                      >от <input type="text" name="min-price" value="0"
+                    /></label>
+                    <label class="max-price"
+                      >до <input type="text" name="max-price" value="5000"
+                    /></label>
+                  </div>
+                </div>
               </fildset>
 
               <fildset>
                 <legend>Цвет</legend>
-                <ul>
+                <ul class="checkbox-group">
                   <li>
                     <input type="checkbox" name="black" id="black" checked />
                     <label for="black">Черный</label>
@@ -128,7 +124,7 @@
 
               <fildset>
                 <legend>Bluetooth</legend>
-                <ul>
+                <ul class="radio-group">
                   <li>
                     <input
                       type="radio"
@@ -249,6 +245,7 @@
                   </ul>
                 </li>
                 <li class="product-card">
+                  <div class="flag flag-new">новинка</div>
                   <div class="product-title-wrap">
                     <h3>
                       <a href="#"> Селфи-палка «Следуй за <br />мной» </a>

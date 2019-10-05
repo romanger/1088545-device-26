@@ -866,7 +866,7 @@ input[type="checkbox"]:checked:active + label::before {
 
 input[type="checkbox"]:disabled + label::before {
   opacity: 0.25;
-}
+} 
 
 .radio-group {
   margin-top: 25px;

@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div class="container">
@@ -42,13 +42,11 @@
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
-
   </header>
 </div>
 <main>
   <div class="container">
     <h1 class="visually-hidden">Магазин гаджетов - Device</h1>
-
     <section class="featured-products-slider">
       <h2 class="visually-hidden">Избранные продукты</h2>
       <div class="slider">
@@ -240,13 +238,13 @@
       <div class="services-wrap">
         <div class="servises-navigation">
           <ul class="service-tabs">
-            <li><a href="#" class="button active">Доставка</a></li>
-            <li><a href="#" class="button">Гарантия</a></li>
-            <li><a href="#" class="button">Кредит</a></li>
+            <li><a href="#" data-index="1" class="button active">Доставка</a></li>
+            <li><a href="#" data-index="2" class="button">Гарантия</a></li>
+            <li><a href="#" data-index="3" class="button">Кредит</a></li>
           </ul>
         </div>
         <div class="services-content">
-          <div class="single-service delivery">
+          <div class="single-service delivery tab-1 active">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -254,14 +252,14 @@
               ваш этаж.
             </p>
           </div>
-          <div class="single-service warranty">
+          <div class="single-service warranty tab-2">
             <h3>Гарантия</h3>
             <p>
               Если из-за возгорания купленного у нас товара у вас сгорит дом — не
               переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
             </p>
           </div>
-          <div class="single-service credit">
+          <div class="single-service credit tab-3">
             <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще! Кредитные консультанты подберут
@@ -278,28 +276,16 @@
       <h2 class="visually-hidden">Бренды</h2>
       <ul class="brand-gallery list-clear">
         <li class="single-brand">
-          <a href="catalog.html"
-          ><img src="img/brand-1.png" alt="dji" width="260" height="100"
-          /></a>
+          <img src="img/brand-1.png" alt="dji" width="260" height="100"/>
         </li>
         <li class="single-brand">
-          <a href="catalog.html"
-          ><img
-            src="img/brand-2.png"
-            alt="Spgadgets"
-            width="260"
-            height="100"
-          /></a>
+         <img src="img/brand-2.png" alt="Spgadgets" width="260" height="100" />
         </li>
         <li class="single-brand">
-          <a href="catalog.html"
-          ><img src="img/brand-3.png" alt="GoPro" width="260" height="100"
-          /></a>
+          <img src="img/brand-3.png" alt="GoPro" width="260" height="100"/>
         </li>
         <li class="single-brand">
-          <a href="catalog.html"
-          ><img src="img/brand-4.png" alt="Vive" width="260" height="100"
-          /></a>
+         <img src="img/brand-4.png" alt="Vive" width="260" height="100"/>
         </li>
       </ul>
     </section>
@@ -319,7 +305,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="button">Подробнее о нас</a>
+        <a href="about-us.html" class="button">Подробнее о нас</a>
       </section>
       <section class="contact-us">
         <h2>Контакты</h2>
@@ -330,7 +316,7 @@
         <a class="open-map" href="https://yandex.com/maps/-/CGsa78Jx">
           <img src="img/map.png" width="564" height="225"
                alt="Адрес магазина: г. Москва, ул. Строителей, 15"/></a>
-        <a href="#" class="button">Напишите нам</a>
+        <a href="contact-us.html" class="button open-contact-us">Напишите нам</a>
       </section>
     </div>
   </div>
@@ -361,7 +347,7 @@
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <p class="phone">Тел.: +7 (495) 495-95-95</p>
+      <p class="phone"><a href="tel:+7 (495) 495-95-95">Тел.: +7 (495) 495-95-95</a></p>
     </div>
     <div class="social-menu-wrap">
       <ul class="social-links">
@@ -382,11 +368,11 @@
     <div class="inputs-wrap">
       <p>
         <label for="name-field">Ваше имя</label>
-        <input type="text" id="name-field" placeholder="Имя Фамилия">
+        <input type="text" class="input-name" id="name-field" placeholder="Имя Фамилия">
       </p>
       <p>
         <label for="email-field">Ваш e-mail:</label>
-        <input type="email" id="email-field" placeholder="email@example.com">
+        <input type="email" class="input-email" id="email-field" placeholder="email@example.com">
       </p>
     </div>
     <p>
@@ -399,8 +385,10 @@
 </section>
 <section class="modal-map">
   <h2 class="visually-hidden">Наш адресс на карте</h2>
-  <img src="img/map-big.png" alt="Адрес магазина: г. Москва, ул. Строителей, 15">
+  <iframe src="https://yandex.ru/map-widget/v1/-/CGsHR87N" width="960" height="559" frameborder="1" allowfullscreen="true"></iframe>
   <button type="button" class="close">Закрыть</button>
 </section>
+
+<script src="js/scripts.min.js"></script>
 </body>
 </html>

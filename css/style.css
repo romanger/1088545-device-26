@@ -509,21 +509,6 @@ footer .service-menu-wrap {
   display: flex;
 }
 
-
-.item-1 table td:nth-child(1),
-.item-2 table td:nth-child(1) {
-  width: 140px;
-}
-
-.item-1 td:nth-child(2),
-.item-2 td:nth-child(2) {
-  width: 150px;
-}
-
-.item-1 td:nth-child(3) {
-  width: 140px;
-}
-
 .slide-title-wrap {
   display: flex;
 }

@@ -17,13 +17,13 @@ function sliderInit() {
     buttons[i].addEventListener('click', function (e) {
       e.preventDefault();
 
-      if(!this.classList.contains('active')){
-      var index = this.textContent;
-      var slideClass = '.item-' + index;
+      if (!this.classList.contains('active')) {
+        var index = this.textContent;
+        var slideClass = '.item-' + index;
 
-      sliderClearActiveStateAll();
-      this.classList.add('active');
-      slider.querySelector(slideClass).classList.add('active');
+        sliderClearActiveStateAll();
+        this.classList.add('active');
+        slider.querySelector(slideClass).classList.add('active');
       }
     });
   }
@@ -80,10 +80,10 @@ closeMap.addEventListener('click', function (e) {
   modalMap.classList.remove('active');
 });
 
-window.addEventListener("keydown", function (e) {
+window.addEventListener('keydown', function (e) {
   if (e.keyCode === 27) {
     e.preventDefault();
-    if (modalMap.classList.contains("active")) {
+    if (modalMap.classList.contains('active')) {
       modalMap.classList.remove('active');
       modalMap.classList.remove('invalid');
     }
@@ -109,10 +109,10 @@ closeContact.addEventListener('click', function (e) {
   modalContact.classList.remove('invalid');
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (modalContact.classList.contains("active")) {
+    if (modalContact.classList.contains('active')) {
       modalContact.classList.remove('active');
       modalContact.classList.remove('invalid');
     }

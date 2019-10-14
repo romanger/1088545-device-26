@@ -35,7 +35,7 @@ sliderInit();
 // Services tabs
 
 var services = document.querySelector('.services');
-var tabs = services.querySelectorAll('.service-tabs a');
+var tabs = services.querySelectorAll('.service-tabs li');
 
 function tabsClearActiveStateAll() {
   var tabsContent = services.querySelectorAll('.single-service');

@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'Gilroy';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   font-display: swap;
-  src: url(../fonts/gilroyextrabold.woff2) format('woff2'), url(../fonts/gilroyextrabold.woff) format('woff');
+  src: url('../fonts/gilroyextrabold.woff2') format('woff2'), url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(../fonts/gilroylight.woff2) format('woff2'), url(../fonts/gilroylight.woff) format('woff');
+  src: url('../fonts/gilroylight.woff2') format('woff2'), url('../fonts/gilroylight.woff') format('woff');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/opensans.woff2) format('woff2'), url(../fonts/opensans.woff) format('woff');
+  src: url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
 }
 
 @font-face {
@@ -27,9 +27,8 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(../fonts/opensanslight.woff2) format('woff2'), url(../fonts/opensanslight.woff) format('woff');
+  src: url('../fonts/opensanslight.woff2') format('woff2'), url('../fonts/opensanslight.woff') format('woff');
 }
-
 
 /* Global styles */
 
@@ -54,7 +53,7 @@ h4,
 h5,
 h6 {
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   color: #000000;
 }
 
@@ -1160,7 +1159,7 @@ input[type='radio']:disabled+label::before {
   color: #d6d6d6;
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 0.25px;
@@ -1206,7 +1205,7 @@ input[type='radio']:disabled+label::before {
 .button {
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   color: #000000;
@@ -1305,7 +1304,7 @@ footer a:active,
   font-size: 18px;
   text-transform: uppercase;
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   color: #000000;
   letter-spacing: 0.2em;
 }
@@ -1321,7 +1320,7 @@ footer a:active,
 .service-menu a {
   font-size: 18px;
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -1460,7 +1459,7 @@ footer a:active,
   line-height: 179.2px;
   color: #ffffff;
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
-  font-weight: 400;
+  font-weight: 800;
   margin: 0;
   letter-spacing: 2px;
 }
@@ -1607,7 +1606,7 @@ footer a:active,
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 40px;
-  font-weight: 400;
+  font-weight: 800;
   color: #000000;
   letter-spacing: 0.05px;
 }
@@ -1638,7 +1637,7 @@ address,
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 800;
 }
 
 .contact-us-form ::placeholder {
@@ -1677,6 +1676,8 @@ address,
 .contact-us-form input[type='email']:focus,
 .contact-us-form textarea:focus {
   outline: 3px solid #f0c52e;
+  background-color: #ffffff;
+  color: #464646;
 }
 
 .contact-us-form input[type='text']:invalid,
@@ -1724,7 +1725,7 @@ address,
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  font-weight: 400;
+  font-weight: 800;
   width: 100%;
   border-top: 2px solid #000000;
   padding-top: 10px;
@@ -1896,7 +1897,7 @@ input:disabled+label {
   line-height: 24px;
   text-transform: uppercase;
   opacity: 0.3;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 0.2em;
 }
 
